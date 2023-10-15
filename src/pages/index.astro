@@ -1,12 +1,21 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Header from '../components/header/header.astro';
+import FirstSection from '../components/first-section/first-section.astro';
+import SecondSection from '../components/second-section/second-section.astro';
+import ThreeSection from '../components/three-section/three-section.astro';
 ---
 
-<Layout title="RVST.DEV">
+<Layout title="RVST.DEV" description="My personal page, for my projects">
+	<Header />
 	<div class="snap-container">
+		<FirstSection />
+		<SecondSection />
+		<ThreeSection />
 
 	</div>
 </Layout>
+
 
 <style>
 	main {
