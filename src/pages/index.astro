@@ -4,15 +4,20 @@ import Header from '../components/header/header.astro';
 import FirstSection from '../components/first-section/first-section.astro';
 import SecondSection from '../components/second-section/second-section.astro';
 import ThreeSection from '../components/three-section/three-section.astro';
+import Pagination from '../components/pagination/pagination.astro';
+import FourSection from '../components/four-section/four-section.astro';
 ---
 
 <Layout title="RVST.DEV" description="My personal page, for my projects">
 	<Header />
 	<div class="snap-container">
+		<Pagination />
+		<div id="divSeguidor" class="gradient"></div>
 		<FirstSection />
 		<SecondSection />
 		<ThreeSection />
-
+		<FourSection />
+		<div id="divSeguidor" class="gradient"></div>
 	</div>
 </Layout>
 

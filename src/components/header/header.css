@@ -1,105 +1,44 @@
 header {
-    height: 80px;
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 3em;
-    margin-right: 3em;
-    align-items: center;
-    z-index: 100;
-  }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-  }
-  
-  .logo h1 {
-    font-size: 25px;
-    letter-spacing: 5px;
-    font-weight: 300;
-    padding-top: 5px;
-    opacity: 0;
-    animation: fade-in 0.3s ease forwards;
-  }
-  
-  @keyframes fade-in {
-    0% {
-      opacity: 0;
-      transform: translateY(-50px);
-    }
-  
-    25% {
-      opacity: 0.25;
-      transform: translateY(-25px);
-    }
-  
-    50% {
-      opacity: 0.5;
-      transform: translateY(-10px);
-    }
-  
-    75% {
-      opacity: 0.75;
-      transform: translateY(-5px);
-    }
-  
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  
-  @keyframes fade-out {
-    0% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  
-    25% {
-      opacity: 0.75;
-      transform: translateY(-5px);
-    }
-  
-    50% {
-      opacity: 0.5;
-      transform: translateY(-10px);
-    }
-  
-    75% {
-      opacity: 0.25;
-      transform: translateY(-25px);
-    }
-  
-    100% {
-      opacity: 0;
-      transform: translateY(-50px);
-    }
-  }
-  
-  #languaje {
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-  }
-  
-  ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    list-style: none;
-    letter-spacing: 3px;
-    font-size: 12px;
-    font-weight: 100;
-  }
-  
-  .btn-nav {
-    letter-spacing: 3px;
-    border: thin #ffffff9a solid !important;
-    font-size: 12px !important;
-  }
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1em;
+  padding-left: 3em;
+  padding-right: 3em;
+  z-index: 100;
+  background: linear-gradient(0deg, #ffffff00, #121212);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+
+
+#languaje {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.btn-nav {
+  letter-spacing: 3px;
+  border: thin #ffffff9a solid !important;
+  font-size: 12px !important;
+}

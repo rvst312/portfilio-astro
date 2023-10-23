@@ -1,0 +1,33 @@
+.pagination {
+    height: 43px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    z-index: 1;
+  }
+  
+  span {
+    width: 5px;
+    height: 25%;
+    background-color: #fff;
+    opacity: .5;
+    border-radius: 50%;
+  }
+  
+  .active {
+    opacity: 1;
+    width: 15px;
+    height: 80%;
+    border-radius: 50%;
+    background-color: #f48c06;
+  }
+  
+  .move {
+    position: fixed;
+    top: 40vh;
+    right: 3.2em;
+    margin-left: 3em;
+    z-index: 10;
+  }
