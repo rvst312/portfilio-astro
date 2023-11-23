@@ -10,7 +10,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^3.3.0",
-    "esbuild": "^0.19.4"
+    "astro": "^3.5.2",
+    "esbuild": "^0.19.4",
+    "scrollreveal": "^4.0.9"
   }
 }

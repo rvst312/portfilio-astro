@@ -160,8 +160,8 @@
   .popup {
     width: 500px;
     height: 350px;
-    background: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(14px);
+    background: rgba(68, 67, 67, 0.4);
+    backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(14px);
     border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 10px;

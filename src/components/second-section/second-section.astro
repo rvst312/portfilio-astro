@@ -1,120 +1,187 @@
 ---
-import '../second-section/second-section.css';
+import "../second-section/second-section.css";
 ---
 
 <div class="snap-section" id="section-two">
-
-    <!-- slider -->
-    <div class="slider_gen">
-      <div class="slider" x-data="{start: true, end: false}">
-        <div class="slider__content" x-ref="slider"
-          x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;">
-          <div class="slider__item">
-            <a onclick="(() => {
+  <!-- slider -->
+  <div class="slider_gen">
+    <div class="slider" x-data="{start: true, end: false}">
+      <div
+        class="slider__content"
+        x-ref="slider"
+        x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;"
+      >
+        <div class="slider__item">
+          <a
+            onclick="(() => {
               const popup = document.querySelector('.popup');
               popup.classList.toggle('active-popup');
-            })()">
-              <div class="popup">
-                <div style="display: flex;align-items: center;justify-content: center;">
-                  <img width="70px" src="/img/Logo Redondo_HÁLSA HOUSE beis.png" alt="Halsa House">
-                </div>
-                <p>Hälsa House es una clínica de fisioterapia y belleza que ofrece una amplia variedad de servicios
-                  para el bienestar de sus clientes, primando la atención personalizada.
-                  Me he enfocado en crear un sitio web moderno e intuitivo que muestre los servicios de Hälsa
-                  House y permita a los clientes reservar citas en línea. El sitio web está optimizado para móviles y
-                  su posicionamiento en los motores de búsqueda para atraer a más clientes potenciales.
-                  <strong>¡Ayudé a Hälsa House a expandir su negocio y a brindar servicios de calidad a más
-                    clientes!</strong>
-                </p>
+            })()"
+          >
+            <div class="popup">
+              <div
+                style="display: flex;align-items: center;justify-content: center;"
+              >
+                <img
+                  width="70px"
+                  src="/img/Logo Redondo_HÁLSA HOUSE beis.png"
+                  alt="Halsa House"
+                />
               </div>
-              <img class="slider__image"
-                src="https://images.unsplash.com/photo-1599422314077-f4dfdaa4cd09?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODR8fGFic3RyYWN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
-                alt="Image">
-              <div class="slider__info">
-                <h2>Hälsa House</h2>
-              </div>
-            </a>
-          </div>
-          <div class="slider__item">
-            <a onclick="(() => {
+              <p>
+                Hälsa House es una clínica de fisioterapia y belleza que ofrece
+                una amplia variedad de servicios para el bienestar de sus
+                clientes, primando la atención personalizada. Me he enfocado en
+                crear un sitio web moderno e intuitivo que muestre los servicios
+                de Hälsa House y permita a los clientes reservar citas en línea.
+                El sitio web está optimizado para móviles y su posicionamiento
+                en los motores de búsqueda para atraer a más clientes
+                potenciales.
+                <strong
+                  >¡Ayudé a Hälsa House a expandir su negocio y a brindar
+                  servicios de calidad a más clientes!</strong
+                >
+              </p>
+            </div>
+            <img class="slider__image" src="/img/slide1.png" alt="Image" />
+            <div class="slider__info">
+              <h2>Hälsa House</h2>
+            </div>
+          </a>
+        </div>
+        <div class="slider__item">
+          <a
+            onclick="(() => {
               const popup2 = document.querySelector('.popup2');
               popup2.classList.toggle('active-popup');
-            })()">
-              <div class="popup popup2">
-                <div style="display: flex;align-items: center;justify-content: center;">
-                  <img width="70px" src="/img/Logo Redondo_HÁLSA HOUSE beis.png" alt="Halsa House">
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium commodi dolorum earum.
-                  Perferendis nemo culpa sunt sint alias ullam placeat.</p>
+            })()"
+          >
+            <div class="popup popup2">
+              <div
+                style="display: flex;align-items: center;justify-content: center;"
+              >
+                <img
+                  width="70px"
+                  src="/img/Logo Redondo_HÁLSA HOUSE beis.png"
+                  alt="Halsa House"
+                />
               </div>
-              <img class="slider__image"
-                src="https://images.unsplash.com/photo-1518640467707-6811f4a6ab73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzB8fGFic3RyYWN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
-                alt="Image">
-              <div class="slider__info">
-                <h2>This is a card</h2>
-              </div>
-            </a>
-          </div>
-          <div class="slider__item">
-            <a onclick="(() => {
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laudantium commodi dolorum earum. Perferendis nemo culpa sunt
+                sint alias ullam placeat.
+              </p>
+            </div>
+            <img
+              class="slider__image"
+              src="https://images.unsplash.com/photo-1518640467707-6811f4a6ab73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzB8fGFic3RyYWN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+              alt="Image"
+            />
+            <div class="slider__info">
+              <h2>This is a card</h2>
+            </div>
+          </a>
+        </div>
+        <div class="slider__item">
+          <a
+            onclick="(() => {
               const popup3 = document.querySelector('.popup3');
               popup3.classList.toggle('active-popup');
-            })()">
-              <div class="popup popup3">
-                <div style="display: flex;align-items: center;justify-content: center;">
-                  <img width="70px" src="/img/Logo Redondo_HÁLSA HOUSE beis.png" alt="Halsa House">
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium commodi dolorum earum.
-                  Perferendis nemo culpa sunt sint alias ullam placeat.</p>
+            })()"
+          >
+            <div class="popup popup3">
+              <div
+                style="display: flex;align-items: center;justify-content: center;"
+              >
+                <img
+                  width="70px"
+                  src="/img/Logo Redondo_HÁLSA HOUSE beis.png"
+                  alt="Halsa House"
+                />
               </div>
-              <img class="slider__image"
-                src="https://images.unsplash.com/photo-1608501821300-4f99e58bba77?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTAxfHxhYnN0cmFjdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
-                alt="Image">
-              <div class="slider__info">
-                <h2>This is a card</h2>
-              </div>
-            </a>
-          </div>
-          <div class="slider__item">
-            <a onclick="(() => {
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laudantium commodi dolorum earum. Perferendis nemo culpa sunt
+                sint alias ullam placeat.
+              </p>
+            </div>
+            <img
+              class="slider__image"
+              src="https://images.unsplash.com/photo-1608501821300-4f99e58bba77?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTAxfHxhYnN0cmFjdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
+              alt="Image"
+            />
+            <div class="slider__info">
+              <h2>This is a card</h2>
+            </div>
+          </a>
+        </div>
+        <div class="slider__item">
+          <a
+            onclick="(() => {
               const popup4 = document.querySelector('.popup4');
               popup4.classList.toggle('active-popup');
-            })()">
-              <div class="popup popup4">
-                <div style="display: flex;align-items: center;justify-content: center;">
-                  <img width="70px" src="/img/Logo Redondo_HÁLSA HOUSE beis.png" alt="Halsa House">
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium commodi dolorum earum.
-                  Perferendis nemo culpa sunt sint alias ullam placeat.</p>
+            })()"
+          >
+            <div class="popup popup4">
+              <div
+                style="display: flex;align-items: center;justify-content: center;"
+              >
+                <img
+                  width="70px"
+                  src="/img/Logo Redondo_HÁLSA HOUSE beis.png"
+                  alt="Halsa House"
+                />
               </div>
-              <img class="slider__image"
-                src="https://images.unsplash.com/photo-1553356084-58ef4a67b2a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGFic3RyYWN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
-                alt="Image">
-              <div class="slider__info">
-                <h2>This is a card</h2>
-              </div>
-            </a>
-          </div>
-          <divf class="slider__item">
-            <a onclick="(() => {
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laudantium commodi dolorum earum. Perferendis nemo culpa sunt
+                sint alias ullam placeat.
+              </p>
+            </div>
+            <img
+              class="slider__image"
+              src="https://images.unsplash.com/photo-1553356084-58ef4a67b2a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGFic3RyYWN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+              alt="Image"
+            />
+            <div class="slider__info">
+              <h2>This is a card</h2>
+            </div>
+          </a>
+        </div>
+        <divf class="slider__item">
+          <a
+            onclick="(() => {
               const popup5 = document.querySelector('.popup5');
               popup5.classList.toggle('active-popup');
-            })()">
-              <div class="popup popup5">
-                <div style="display: flex;align-items: center;justify-content: center;">
-                  <img width="70px" src="/img/Logo Redondo_HÁLSA HOUSE beis.png" alt="Halsa House">
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium commodi dolorum earum.
-                  Perferendis nemo culpa sunt sint alias ullam placeat.</p>
+            })()"
+          >
+            <div class="popup popup5">
+              <div
+                style="display: flex;align-items: center;justify-content: center;"
+              >
+                <img
+                  width="70px"
+                  src="/img/Logo Redondo_HÁLSA HOUSE beis.png"
+                  alt="Halsa House"
+                />
               </div>
-              <img class="slider__image"
-                src="https://images.unsplash.com/photo-1604871000636-074fa5117945?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fGFic3RyYWN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
-                alt="Image">
-              <div class="slider__info">
-                <h2>This is a card</h2>
-              </div>
-            </a>
-        </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laudantium commodi dolorum earum. Perferendis nemo culpa sunt
+                sint alias ullam placeat.
+              </p>
+            </div>
+            <img
+              class="slider__image"
+              src="https://images.unsplash.com/photo-1604871000636-074fa5117945?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fGFic3RyYWN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+              alt="Image"
+            />
+            <div class="slider__info">
+              <h2>This is a card</h2>
+            </div>
+          </a>
+        </divf>
       </div>
     </div>
   </div>
+</div>
