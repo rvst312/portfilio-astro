@@ -76,6 +76,17 @@ observer.observe(sec_two);
 observer.observe(sec_three);
 observer.observe(sec_four);
 
+// Slider shadow
+const slider = document.querySelector('.slider__content');
+slider.addEventListener('scroll', ()=>{
+  if (slider.scrollLeft > 50){
+    slider.classList.add('shadow-in');
+  }
+  else {
+    slider.classList.remove('shadow-in');
+  }
+});
+
 
 // slider works
 //const prev_buttom = document.getElementById('previus');
